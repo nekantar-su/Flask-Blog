@@ -1,0 +1,112 @@
+2022-06-22 20:51:32,276 INFO: Microblog startup [in /Users/nikokantarellis/coding/Flask-Blog/app/__init__.py:45]
+2022-06-22 20:51:40,311 INFO: Microblog startup [in /Users/nikokantarellis/coding/Flask-Blog/app/__init__.py:45]
+2022-06-22 21:35:51,694 INFO: Microblog startup [in /Users/nikokantarellis/coding/Flask-Blog/app/__init__.py:45]
+2022-06-22 21:44:29,453 INFO: Microblog startup [in /Users/nikokantarellis/coding/Flask-Blog/app/__init__.py:45]
+2022-06-22 21:44:33,855 INFO: Microblog startup [in /Users/nikokantarellis/coding/Flask-Blog/app/__init__.py:45]
+2022-06-23 12:21:44,137 INFO: Microblog startup [in /Users/nikokantarellis/coding/Flask-Blog/app/__init__.py:45]
+2022-06-30 08:43:08,029 INFO: Microblog startup [in /Users/nikokantarellis/coding/Flask-Blog/app/__init__.py:47]
+2022-06-30 22:21:02,263 INFO: Microblog startup [in /Users/nikokantarellis/coding/Flask-Blog/app/__init__.py:47]
+2022-06-30 22:21:04,347 ERROR: Exception on / [GET] [in /Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 303, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/Users/nikokantarellis/coding/Flask-Blog/app/routes.py", line 34, in index
+    return render_template('index.html', title='Home', form=form,
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/nikokantarellis/coding/Flask-Blog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %} {% block app_content %}
+  File "/Users/nikokantarellis/coding/Flask-Blog/app/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %} {% block title %} {% if title %}{{ title }}
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask/templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask/templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bootstrap/base.html
+2022-06-30 22:21:24,231 ERROR: Exception on / [GET] [in /Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 303, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/Users/nikokantarellis/coding/Flask-Blog/app/routes.py", line 34, in index
+    return render_template('index.html', title='Home', form=form,
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/nikokantarellis/coding/Flask-Blog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %} {% block app_content %}
+  File "/Users/nikokantarellis/coding/Flask-Blog/app/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %} {% block title %} {% if title %}{{ title }}
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask/templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask/templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bootstrap/base.html
+2022-06-30 22:22:04,670 ERROR: Exception on / [GET] [in /Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask/app.py:1455]
+Traceback (most recent call last):
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask_login/utils.py", line 303, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/Users/nikokantarellis/coding/Flask-Blog/app/routes.py", line 34, in index
+    return render_template('index.html', title='Home', form=form,
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask/templating.py", line 148, in render_template
+    return _render(
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/nikokantarellis/coding/Flask-Blog/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %} {% block app_content %}
+  File "/Users/nikokantarellis/coding/Flask-Blog/app/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %} {% block title %} {% if title %}{{ title }}
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask/templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "/Users/nikokantarellis/coding/Flask-Blog/venv/lib/python3.10/site-packages/flask/templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bootstrap/base.html
+2022-06-30 22:22:47,233 INFO: Microblog startup [in /Users/nikokantarellis/coding/Flask-Blog/app/__init__.py:50]
+2022-07-05 12:14:38,870 INFO: Microblog startup [in /Users/nikokantarellis/coding/Flask-Blog/app/__init__.py:52]
+2022-07-05 12:15:58,562 INFO: Microblog startup [in /Users/nikokantarellis/coding/Flask-Blog/app/__init__.py:52]
+2022-07-07 08:42:51,090 INFO: Microblog startup [in /Users/nikokantarellis/coding/Flask-Blog/app/__init__.py:53]
+2022-07-07 08:43:41,530 INFO: Microblog startup [in /Users/nikokantarellis/coding/Flask-Blog/app/__init__.py:53]
+2022-07-07 08:43:51,823 INFO: Microblog startup [in /Users/nikokantarellis/coding/Flask-Blog/app/__init__.py:53]
+2022-07-07 09:16:11,306 INFO: Microblog startup [in /Users/nikokantarellis/coding/Flask-Blog/app/__init__.py:53]
+2022-07-07 11:00:09,293 INFO: Microblog startup [in /Users/nikokantarellis/coding/Flask-Blog/app/__init__.py:53]
+2022-07-07 11:00:34,135 INFO: Microblog startup [in /Users/nikokantarellis/coding/Flask-Blog/app/__init__.py:53]
+2022-07-07 11:01:25,566 INFO: Microblog startup [in /Users/nikokantarellis/coding/Flask-Blog/app/__init__.py:53]
+2022-07-07 11:03:11,095 INFO: Microblog startup [in /Users/nikokantarellis/coding/Flask-Blog/app/__init__.py:53]
